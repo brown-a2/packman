@@ -1,5 +1,5 @@
 {
-    "name": "ministryofjustice/packman",
+    "name": "browna2/packman",
     "description": "Pushes packages up to our private repository",
     "type": "project",
     "require": {
