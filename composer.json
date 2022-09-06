@@ -1,0 +1,25 @@
+{
+    "name": "ministryofjustice/packman",
+    "description": "Pushes packages up to our private repository",
+    "type": "project",
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "private-packagist/api-client": "^1.29",
+        "php-http/curl-client": "^2.2",
+        "guzzlehttp/psr7": "^2.4",
+        "php-http/message": "^1.13"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PrivatePackagist\\ApiClient\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "adam",
+            "email": "brown-a2@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "alpha"
+}
