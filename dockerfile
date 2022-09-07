@@ -4,7 +4,6 @@ WORKDIR /tmp
 RUN composer install -v
 
 FROM php:8.1-cli
-
 # Install zip extention
 RUN apt-get update && apt-get install -y libzip-dev zip && docker-php-ext-install zip
 
