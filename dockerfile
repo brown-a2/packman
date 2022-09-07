@@ -5,7 +5,7 @@ RUN composer install -v
 
 FROM php:8.1-cli
 
-#install some base extensions
+# Install zip extention
 RUN apt-get update && apt-get install -y libzip-dev zip && docker-php-ext-install zip
 
 LABEL "com.github.actions.name"="Github Action Packagist Push"
@@ -17,7 +17,7 @@ LABEL repository="https://github.com/brown-a2/packman"
 LABEL homepage="https://github.com/brown-a2/"
 LABEL maintainer="browna2"
 
-# Install WP applications and repos
+# Install Packagist API client via Composer
 COPY --from=composer /tmp/vendor /vendor 
 COPY go.php .
 COPY hale-compiled.zip .
