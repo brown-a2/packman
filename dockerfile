@@ -4,6 +4,10 @@ WORKDIR /tmp
 RUN composer install -v
 
 FROM php:8.1-cli
+
+#install some base extensions
+RUN apt-get update && apt-get install -y libzip-dev zip && docker-php-ext-install zip
+
 LABEL "com.github.actions.name"="Github Action Packagist Push"
 LABEL "com.github.actions.description"="Push package to Packagist"
 LABEL "com.github.actions.icon"="refresh-cw"
