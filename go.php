@@ -1,13 +1,11 @@
 <?php
-//______  ___  _____ __  ___ __  ___  ___  __  __
-//| ___ \/ _ \/  __ \| | / /|  \/  | / _ \ | \ | |
-//| |_/ / /_\ \ /  \/| |/ / | .  . |/ /_\ \|  \| |
-//|  __/|  _  | |    |    \ | |\/| ||  _  || . ` |
-//| |   | | | | \__/\| |\  \| |  | || | | || |\  |
-//\_|   \_| |_/\____/\_| \_/\_|  |_/\_| |_/\_| \_/
+// ___  _   __ _  __   _  _  _  _ 
+//| o \/ \ / _| |// \_/ |/ \| \| |
+//|  _/ o ( (_|  (| \_/ | o | \\ |
+//|_| |_n_|\__|_|\\_| |_|_n_|_|\_|
 // Pushing packages since 2022
 //
-// Required - access to Packagist API authentication
+// Packman uses Packagist API client
 // https://github.com/packagist/private-packagist-api-client
 
 // External variables
