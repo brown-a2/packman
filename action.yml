@@ -1,6 +1,5 @@
 name: 'packman'
 description: 'push repo contents to packagist'
-inputs:
 runs:
   using: 'docker'
   image: 'dockerfile'
